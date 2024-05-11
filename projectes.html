@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Curiculum</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./stylesheets/application.css">
+    <link rel="stylesheet" href="./stylesheets/tarjetaprojecte.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  </head>
+
+  <body>
+    
+    <header>
+      <div class="containern">
+        <nav>
+          <ul>
+            <li><a href="projectes.html">Projects</a></li>
+            <li><a href="curiculum.html">Curiculum</a></li>
+            <li><a href="i.html">aboutme</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="box">
+        <div class="contai">
+            <div class="cont proj1">
+
+                <div class="caixa">
+            
+                    <div class="title ">
+                        <h4 >JOC EDA</h4>
+                    </div>
+                    <div class="projecte">
+                        <p></p>
+                    </div>
+                    <p class="lenguages">
+                        <span>C++</span>
+                    </p>
+                </div>
+            
+            </div>
+            <div class="cont proj2">
+
+                <div class="caixa">
+            
+                    <div class="title ">
+                        <h4 ><%= projecte.title %></h4>
+                    </div>
+                    <div class="projecte">
+                        <p><%=projecte.body%></p>
+                    </div>
+                    <p class="lenguages">
+                        <% projecte.llenguatges.split(",").each do |a|%>
+                            <span><%=a%></span>
+                        <%end%>
+                    </p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+  </body>
+  
+</html>

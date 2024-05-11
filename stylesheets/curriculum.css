@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.education header{
+    background: none;
+    position: relative;
+    margin-bottom: 45px;
+}
+.education{
+    color: black;
+    display: block;
+    position: relative;
+    padding: 45px 0 15px 0;
+    font-family: "Roboto", sans-serif;
+}
+.education header h2{
+    margin: 0;
+    position: relative;
+    display: block;
+    font-size: 45px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+.Tcontainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;
+}
+.timeline .timeline-text{
+    padding: 30px;
+    position: relative;
+    border-right: 5px solid #cccccc;
+    display: block;
+    background: #ffffff;
+    box-shadow: 0 00 60px rgba(0,0,0, .08);
+}
+.education .timeline{
+    width: 100%;
+    position: relative;
+}
+.education .timeline::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: red;
+    top:0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+.timeline .timeline-item::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top:    46px;
+    right: 10px;
+    z-index: 1;
+    border: 10px solid;
+    border-color: transparent transparent transparent #cccccc;
+    box-sizing: border-box;
+}
+.timeline .timeline-item::after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 48px;
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid red;
+    border-radius: 16px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.timeline-item.left .timeline-data{
+    text-align: left;
+    left: calc(100% + 55px);
+}
+.timeline .timeline-data{
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.timeline .timeline-item.left{
+    left: 0;
+    padding-right: 30px;
+}
+.timeline .timeline-item{
+    position: relative;
+    width: 50%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.timeline .timeline-item.right{
+    left: 50%;
+    padding-left: 30px;
+}
+
+.timeline .timeline-item.right .timeline-text{
+    border-right: none;
+    border-left: 5px solid #cccccc;
+}
+.timeline .timeline-item.right .timeline-data{
+    text-align: right;
+    right:  calc(100% + 55px);
+}
+.timeline .timeline-item.right::before{
+    left: 10px;
+    border-color: transparent #cccccc transparent transparent;
+}
+.timeline .timeline-item.right::after{
+    left: -8px;
+}
+.timeline-text h4{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+}
+.timeline-text p{
+    font-size: 16px;
+}
+
+
